@@ -1,0 +1,408 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f9f5f2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(1, 1, 1, 0.5);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* .navbar .navbar-logo{
+    font-size: x-large;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar .navbar-logo span {
+    color: #70c075;
+    font-style: italic;
+} */
+
+.navbar .navbar-nav a {
+    color: white;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin: 0 1rem;
+    
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0,5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: white;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+/* hero section start */
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/20231028075706714.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%; /* Sesuaikan tinggi gradasi sesuai kebutuhan */
+    bottom: 0; /* Posisikan elemen di bagian bawah */
+    background: linear-gradient(0deg, rgb(255, 255, 255)rgba(255, 255, 255, 0)0); /*Gradient dari transparan ke hitam*/
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5rem;
+    color: #72a175;
+    text-shadow: 2px 2px 2px #72a175;
+    line-height: 1.2;
+}
+
+.hero .content p {
+    color: #72a175;
+    /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-size: 1rem;
+    /*mix-blend-mode: difference;*/
+}
+
+.hero .content .cta {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.7rem 0.7rem ;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #72a175;
+    border-radius: 10px 20px;
+}
+
+/* hero section end */
+
+/* about start */
+.about h2{
+    font-size: 2.3rem;
+    padding: 8rem 7% 1rem;
+    text-align: center;
+    color: #72a175;
+}
+
+.container-2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #72a175;
+}
+
+.wrapper {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 28%);
+    padding: 15px 0;
+}
+
+.wrapper-box {
+    display: grid;
+    grid-template-columns: 22% 78%;
+}
+.wrapper-box h1 {
+    width: 100%;
+    height: 100%;
+    opacity: var(--op-2);
+    float: left;
+}
+.box-item {
+    width: 100%;
+    height: 100%;
+}
+.box-item h3 {
+    opacity: 0.95;
+}
+.box-item button {
+    border: none;
+    border-radius: 10px;
+    padding: 1px 8px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    background: rgba(17, 19, 19, 0.2);
+    transition: all 0.4s ease;
+}
+.box-item button:hover {
+    color: #72a175;
+
+}
+.box-item h4 {
+    opacity: var(--op-2);
+    margin-bottom: 10px;
+}
+#exp {
+    cursor: pointer;
+    opacity: var(--op-2);
+}
+#exp i {
+    rotate: -45deg;
+    transition: all 0.3s ease;
+}
+#exp:hover {
+    opacity: var(--op-3);
+}
+#exp:hover i {
+    transform: translate(8px, -2px);
+}
+
+/* about end */
+
+/* menu start */
+.menu h2 {
+    font-size: 2.3rem;
+    padding: 8rem 7% 1rem;
+    text-align: center;
+    color: #72a175;
+}
+
+.html {
+    color: #72a175;
+    font-size: 1rem;
+    text-align: center;
+    border-style: solid;
+    border-color: #72a175;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.css {
+    padding: 8rem 7% 1rem;
+    color: #72a175;
+    font-size: 1rem;
+    text-align: center;
+    border-style: solid;
+    border-top: none;
+    border-color: #72a175;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.java {
+    padding: 8rem 7% 1rem;
+    color: #72a175;
+    font-size: 1rem;
+    text-align: center;
+    border-style: solid;
+    border-top: none;
+    border-color: #72a175;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* menu end */
+
+/* kontak */
+ .contact {
+    font-size: 2.3rem;
+    padding: 8rem 7% 1rem;
+    text-align: center;
+    color: #72a175;
+ }
+
+ .form-group label {
+    display: block;
+    margin-left: 37rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 40rem;
+    margin-left: 37rem;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0.15s;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    height: 4.6rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit {
+    background: #72a175;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 37rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.submit:hover {
+    background: rgba(173, 216, 230, 1);
+    color: black;
+}
+
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border: 1px solid #1dbcfd;
+}
+
+/* kontak end */
+
+/* footer */
+.link a {
+    color: white;
+}
+footer {
+    background-color: #72a175;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    color: white;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+
+footer .social a {
+    margin: 1rem;
+}
+
+footer .socials a:hover {
+    color: #72a175;
+}
+
+/* media queris */
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map {
+        height: 30rem;
+        padding-top: 0;
+    }
+}
+/* mobile */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+
+/* Untuk mengatur tampilan formulir kontak pada layar yang lebih kecil */
+@media (max-width: 758px) {
+    .form-group label {
+        display: block;
+        width: 100%; /* Mengisi lebar penuh pada layar kecil */
+        margin-left: 0; /* Menghapus margin kiri */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%; /* Mengisi lebar penuh pada layar kecil */
+        margin-left: 0; /* Menghapus margin kiri */
+    }
+
+    .submit {
+        width: 100%; /* Mengisi lebar penuh pada layar kecil */
+        margin-left: 0; /* Menghapus margin kiri */
+    }
+}
